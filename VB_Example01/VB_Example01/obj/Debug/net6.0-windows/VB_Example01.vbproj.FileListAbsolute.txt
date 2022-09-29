@@ -1,0 +1,17 @@
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\bin\Debug\net6.0-windows\VB_Example01.exe
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\bin\Debug\net6.0-windows\VB_Example01.deps.json
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\bin\Debug\net6.0-windows\VB_Example01.runtimeconfig.json
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\bin\Debug\net6.0-windows\VB_Example01.dll
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\bin\Debug\net6.0-windows\VB_Example01.pdb
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\VB_Example01.vbproj.AssemblyReference.cache
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\VB_Example01.Form1.resources
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\VB_Example01.vbproj.GenerateResource.cache
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\VB_Example01.GeneratedMSBuildEditorConfig.editorconfig
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\VB_Example01.AssemblyInfoInputs.cache
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\VB_Example01.AssemblyInfo.vb
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\VB_Example01.vbproj.CoreCompileInputs.cache
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\VB_Example01.dll
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\refint\VB_Example01.dll
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\VB_Example01.pdb
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\VB_Example01.genruntimeconfig.cache
+D:\dev\AlbertoSpinella\uniRoma-statistics\VB_Example01\VB_Example01\obj\Debug\net6.0-windows\ref\VB_Example01.dll
