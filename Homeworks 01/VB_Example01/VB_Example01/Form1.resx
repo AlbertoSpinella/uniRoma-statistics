@@ -60,11 +60,11 @@
   <data name="RichTextBox1.Text" xml:space="preserve">
     <value>01 - Statistics Homework within 06/10/2022
 Alberto Spinella - 2076802
+Teacher: professor Tommaso Gastaldi
+Used language: VB
 
 Press the button "Background" to change the background color of this box.
-
 Press the button "Text" to change the text color of this box.
-
 Press "Reset" to restore original colors.</value>
   </data>
 </root>

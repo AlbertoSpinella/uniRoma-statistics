@@ -81,7 +81,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Name = "Form1"
-        Me.Text = "Alberto Spinella - 2076802"
+        Me.Text = "Alberto Spinella - 2076802 - VB"
         Me.ResumeLayout(False)
 
     End Sub
