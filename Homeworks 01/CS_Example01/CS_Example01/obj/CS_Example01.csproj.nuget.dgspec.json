@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\AlbertoSpinella\\uniRoma-statistics\\CS_Example01\\CS_Example01\\CS_Example01.csproj": {}
+    "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 01\\CS_Example01\\CS_Example01\\CS_Example01.csproj": {}
   },
   "projects": {
-    "D:\\dev\\AlbertoSpinella\\uniRoma-statistics\\CS_Example01\\CS_Example01\\CS_Example01.csproj": {
+    "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 01\\CS_Example01\\CS_Example01\\CS_Example01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\AlbertoSpinella\\uniRoma-statistics\\CS_Example01\\CS_Example01\\CS_Example01.csproj",
+        "projectUniqueName": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 01\\CS_Example01\\CS_Example01\\CS_Example01.csproj",
         "projectName": "CS_Example01",
-        "projectPath": "D:\\dev\\AlbertoSpinella\\uniRoma-statistics\\CS_Example01\\CS_Example01\\CS_Example01.csproj",
+        "projectPath": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 01\\CS_Example01\\CS_Example01\\CS_Example01.csproj",
         "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\AlbertoSpinella\\uniRoma-statistics\\CS_Example01\\CS_Example01\\obj\\",
+        "outputPath": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 01\\CS_Example01\\CS_Example01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alber\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\AlbertoSpinella\\uniRoma-statistics\\VB_Example01\\VB_Example01\\VB_Example01.vbproj": {}
+    "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 01\\VB_Example01\\VB_Example01\\VB_Example01.vbproj": {}
   },
   "projects": {
-    "D:\\dev\\AlbertoSpinella\\uniRoma-statistics\\VB_Example01\\VB_Example01\\VB_Example01.vbproj": {
+    "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 01\\VB_Example01\\VB_Example01\\VB_Example01.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\AlbertoSpinella\\uniRoma-statistics\\VB_Example01\\VB_Example01\\VB_Example01.vbproj",
+        "projectUniqueName": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 01\\VB_Example01\\VB_Example01\\VB_Example01.vbproj",
         "projectName": "VB_Example01",
-        "projectPath": "D:\\dev\\AlbertoSpinella\\uniRoma-statistics\\VB_Example01\\VB_Example01\\VB_Example01.vbproj",
+        "projectPath": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 01\\VB_Example01\\VB_Example01\\VB_Example01.vbproj",
         "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\AlbertoSpinella\\uniRoma-statistics\\VB_Example01\\VB_Example01\\obj\\",
+        "outputPath": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 01\\VB_Example01\\VB_Example01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alber\\AppData\\Roaming\\NuGet\\NuGet.Config",

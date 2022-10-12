@@ -15,3 +15,20 @@ D:\dev\AlbertoSpinella\uniRoma-statistics\CS_Example01\CS_Example01\obj\Debug\ne
 D:\dev\AlbertoSpinella\uniRoma-statistics\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.pdb
 D:\dev\AlbertoSpinella\uniRoma-statistics\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.genruntimeconfig.cache
 D:\dev\AlbertoSpinella\uniRoma-statistics\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\ref\CS_Example01.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\bin\Debug\net6.0-windows\CS_Example01.exe
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\bin\Debug\net6.0-windows\CS_Example01.deps.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\bin\Debug\net6.0-windows\CS_Example01.runtimeconfig.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\bin\Debug\net6.0-windows\CS_Example01.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\bin\Debug\net6.0-windows\CS_Example01.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.csproj.AssemblyReference.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.Form1.resources
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.csproj.GenerateResource.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.GeneratedMSBuildEditorConfig.editorconfig
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.AssemblyInfoInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.AssemblyInfo.cs
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.csproj.CoreCompileInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\refint\CS_Example01.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\CS_Example01.genruntimeconfig.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 01\CS_Example01\CS_Example01\obj\Debug\net6.0-windows\ref\CS_Example01.dll
