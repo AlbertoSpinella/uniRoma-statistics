@@ -1,0 +1,89 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>03 - Statistics Homework within 20/10/2022
+Alberto Spinella - 2076802
+Teacher: professor Tommaso Gastaldi
+Used language: VB
+
+This program read a CSV file obtained from a Wireshark sniffing session and creates some contingency tables.
+If you want to change the path of "ping.csv" file, just drag an drop it on the textBox below or select through the explorer.
+To discover more about the context, scroll down this RichTextBox: CONTINUE
+
+
+There are 4 hosts. Their IP are:
+ServerA - 172.17.0.2
+ServerB - 172.17.0.3
+ServerC - 172.17.0.4
+ServerD - 172.17.0.5
+
+What happens is:
+- ServerA sends 4 ICMP packets to ServerB;
+- ServerC sends 4 ICMP packets to ServerB;
+- ServerD sends 2 ICMP packets to ServerA;
+- ServerA sends 3 ICMP packets to ServerC;
+- ServerD sends 5 ICMP packets to ServerC.
+
+Every sent ICMP generate 2 packets, and 2 consequent replies. So, by "ServerA sends 4 ICMP packets to ServerB" means there are 4 requests (8 packets) and 4 replies (8 packets), for a total of 16 packets.
+
+The visual result captured with Wireshark is available in the README.md related to this repo, at this link: XXX
+And, also, it is available at my statistics' homework 03 blog page, at this link: XXX</value>
+  </data>
+</root>
