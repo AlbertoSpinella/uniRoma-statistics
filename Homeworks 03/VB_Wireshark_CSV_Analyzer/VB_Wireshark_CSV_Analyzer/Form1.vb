@@ -66,14 +66,7 @@ Public Class Form1
     Sub PrintResults_DiscreteDistribution(FrequencyDistribution As Dictionary(Of Tuple(Of String, String), FrequenciesForValue))
 
         Me.RichTextBox2.AppendText("____________________________________________" & vbCrLf & vbCrLf)
-        Me.RichTextBox2.AppendText("BIVARIATE DISTRIBUTION of X and Y" & vbCrLf & vbCrLf)
-
-        'For Each kvp As KeyValuePair(Of Tuple(Of Double, Double), FrequenciesForValue) In SortedDistr
-        '    Me.RichTextBox2.AppendText(kvp.Key.ToString.PadRight(7) &
-        '                               kvp.Value.Count.ToString.PadRight(7) &
-        '                               kvp.Value.RelativeFrequency.ToString("0.##").PadRight(7) &
-        '                               kvp.Value.Percentage.ToString.PadRight(4) & " % " & vbCrLf)
-        'Next
+        Me.RichTextBox2.AppendText("BIVARIATE DISTRIBUTION of SRC and DST" & vbCrLf & vbCrLf)
 
         Dim DistinctValue_FirstVariable As New Dictionary(Of String, Object)
         Dim DistinctValue_SecondVariable As New Dictionary(Of String, Object)
@@ -112,9 +105,9 @@ Public Class Form1
 
                 Dim c As Integer
                 If FrequencyDistribution.ContainsKey(t) Then
-                    c = FrequencyDistribution(t).Count   'joint frequency of X and Y
+                    c = FrequencyDistribution(t).Count
                 Else
-                    c = 0                                'joint frequency of X and Y
+                    c = 0
                 End If
 
                 Me.RichTextBox2.AppendText(c.ToString.PadRight(12))
