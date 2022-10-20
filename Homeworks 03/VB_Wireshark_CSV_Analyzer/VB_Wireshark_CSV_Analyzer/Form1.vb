@@ -3,6 +3,24 @@ Imports System.Reflection
 Imports Microsoft.VisualBasic.FileIO
 
 Public Class Form1
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.RichTextBox3.EnableAutoDragDrop = True
+    End Sub
+    Private Sub RichTextBox3_DragDrop(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles RichTextBox3.DragDrop
+        e.Effect = DragDropEffects.None 'hide file icon
+        Me.RichTextBox3.Clear()
+
+        Dim files() As String = CType(e.Data.GetData(DataFormats.FileDrop), String())
+
+        For Each path In files
+            Me.RichTextBox3.AppendText(path)
+        Next
+    End Sub
+    Private Sub RichTextBox3_DragEnter(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles RichTextBox3.DragEnter
+        If e.Data.GetDataPresent(DataFormats.FileDrop) Then
+            e.Effect = DragDropEffects.Copy
+        End If
+    End Sub
 
     Function ParseFile(Path As String) As List(Of Packet)
         Dim ListOfUnits As New List(Of Packet)
@@ -118,7 +136,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim Path As String = Me.TextBox1.Text
+        Dim Path As String = Me.RichTextBox3.Text
         Me.RichTextBox2.Clear()
 
         Dim ListOfUnits As List(Of Packet) = Me.ParseFile(Path)
@@ -135,5 +153,13 @@ Public Class Form1
 
         Me.PrintResults_DiscreteDistribution(FrequencyDistribution)
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim o As New OpenFileDialog
+        o.ShowDialog()
+
+        If String.IsNullOrWhiteSpace(o.FileName) Then Exit Sub
+        Me.RichTextBox3.Text = o.FileName
     End Sub
 End Class
