@@ -7,7 +7,7 @@ Public Class Form1
         Me.RichTextBox3.EnableAutoDragDrop = True
     End Sub
     Private Sub RichTextBox3_DragDrop(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles RichTextBox3.DragDrop
-        e.Effect = DragDropEffects.None 'hide file icon
+        e.Effect = DragDropEffects.None
         Me.RichTextBox3.Clear()
 
         Dim files() As String = CType(e.Data.GetData(DataFormats.FileDrop), String())
@@ -134,6 +134,13 @@ Public Class Form1
         Next
 
     End Sub
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim o As New OpenFileDialog
+        o.ShowDialog()
+
+        If String.IsNullOrWhiteSpace(o.FileName) Then Exit Sub
+        Me.RichTextBox3.Text = o.FileName
+    End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim Path As String = Me.RichTextBox3.Text
@@ -153,13 +160,5 @@ Public Class Form1
 
         Me.PrintResults_DiscreteDistribution(FrequencyDistribution)
 
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim o As New OpenFileDialog
-        o.ShowDialog()
-
-        If String.IsNullOrWhiteSpace(o.FileName) Then Exit Sub
-        Me.RichTextBox3.Text = o.FileName
     End Sub
 End Class
