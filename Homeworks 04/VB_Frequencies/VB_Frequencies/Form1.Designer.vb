@@ -31,6 +31,9 @@ Partial Class Form1
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TrackBar3 = New System.Windows.Forms.TrackBar()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -40,24 +43,26 @@ Partial Class Form1
         '
         'Button1
         '
+        Me.Button1.BackColor = System.Drawing.Color.Red
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Button1.Location = New System.Drawing.Point(12, 12)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(184, 62)
+        Me.Button1.Size = New System.Drawing.Size(202, 96)
         Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Text = "Run"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 123)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 114)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(828, 499)
+        Me.PictureBox1.Size = New System.Drawing.Size(599, 554)
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(253, 12)
+        Me.TrackBar1.Location = New System.Drawing.Point(565, 24)
         Me.TrackBar1.Maximum = 200
         Me.TrackBar1.Minimum = 100
         Me.TrackBar1.Name = "TrackBar1"
@@ -68,8 +73,8 @@ Partial Class Form1
         '
         'TrackBar2
         '
-        Me.TrackBar2.Location = New System.Drawing.Point(517, 12)
-        Me.TrackBar2.Maximum = 100
+        Me.TrackBar2.Location = New System.Drawing.Point(785, 24)
+        Me.TrackBar2.Maximum = 500
         Me.TrackBar2.Minimum = 1
         Me.TrackBar2.Name = "TrackBar2"
         Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
@@ -80,7 +85,7 @@ Partial Class Form1
         '
         Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Location = New System.Drawing.Point(257, 53)
+        Me.TextBox1.Location = New System.Drawing.Point(569, 65)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 16)
         Me.TextBox1.TabIndex = 7
@@ -90,7 +95,7 @@ Partial Class Form1
         '
         Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Location = New System.Drawing.Point(517, 53)
+        Me.TextBox2.Location = New System.Drawing.Point(785, 65)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(140, 16)
         Me.TextBox2.TabIndex = 8
@@ -100,7 +105,7 @@ Partial Class Form1
         '
         Me.TextBox3.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Location = New System.Drawing.Point(773, 53)
+        Me.TextBox3.Location = New System.Drawing.Point(999, 65)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(140, 16)
         Me.TextBox3.TabIndex = 10
@@ -108,7 +113,7 @@ Partial Class Form1
         '
         'TrackBar3
         '
-        Me.TrackBar3.Location = New System.Drawing.Point(773, 12)
+        Me.TrackBar3.Location = New System.Drawing.Point(999, 24)
         Me.TrackBar3.Maximum = 100
         Me.TrackBar3.Minimum = 1
         Me.TrackBar3.Name = "TrackBar3"
@@ -118,17 +123,52 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(846, 123)
+        Me.PictureBox2.Location = New System.Drawing.Point(617, 114)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(238, 499)
+        Me.PictureBox2.Size = New System.Drawing.Size(354, 554)
         Me.PictureBox2.TabIndex = 11
         Me.PictureBox2.TabStop = False
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(977, 114)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(189, 554)
+        Me.RichTextBox1.TabIndex = 12
+        Me.RichTextBox1.Text = ""
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Checked = True
+        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox1.Location = New System.Drawing.Point(220, 31)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(73, 19)
+        Me.CheckBox1.TabIndex = 13
+        Me.CheckBox1.Text = "Absolute"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Checked = True
+        Me.CheckBox2.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.CheckBox2.Location = New System.Drawing.Point(220, 56)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(67, 19)
+        Me.CheckBox2.TabIndex = 14
+        Me.CheckBox2.Text = "Relative"
+        Me.CheckBox2.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1096, 634)
+        Me.ClientSize = New System.Drawing.Size(1178, 674)
+        Me.Controls.Add(Me.CheckBox2)
+        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TrackBar3)
@@ -159,4 +199,7 @@ Partial Class Form1
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TrackBar3 As TrackBar
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents CheckBox2 As CheckBox
 End Class
