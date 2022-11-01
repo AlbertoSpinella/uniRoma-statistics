@@ -108,7 +108,7 @@ Public Class Form1
         Next
 
         Me.RichTextBox1.Clear()
-        For Each kvp As KeyValuePair(Of Integer, Integer) In DictionaryOfLastY
+        For Each kvp As KeyValuePair(Of Integer, Integer) In DictionaryOfLastY.Reverse()
             Me.RichTextBox1.AppendText(kvp.Key & ": " & kvp.Value & vbCrLf)
 
             Dim CountWidth As Integer = kvp.Value * 5

@@ -57,4 +57,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox2.Text" xml:space="preserve">
+    <value>04 - Statistics Homework within 27/10/2022
+Alberto Spinella - 2076802
+Teacher: professor Tommaso Gastaldi
+Used language: VB
+
+Press the button Run to run a simulation of coin tosses. Color red refers to absolute frequency; color green refers to relative frequency.
+You can adjust the settings as preferred.</value>
+  </data>
 </root>
