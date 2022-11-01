@@ -99,10 +99,8 @@ Public Class Form1
 
 
             If DictionaryOfLastY.ContainsKey(LastY) Then
-                'Me.RichTextBox2.AppendText("YES" & vbCrLf)
                 DictionaryOfLastY(LastY) += 1
             Else
-                'Me.RichTextBox2.AppendText("NO" & vbCrLf)
                 DictionaryOfLastY.Add(LastY, 1)
             End If
         Next
