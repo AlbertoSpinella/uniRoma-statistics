@@ -58,7 +58,7 @@ Partial Class Form1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(12, 274)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(599, 394)
+        Me.PictureBox1.Size = New System.Drawing.Size(772, 505)
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
         '
@@ -125,17 +125,17 @@ Partial Class Form1
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(617, 274)
+        Me.PictureBox2.Location = New System.Drawing.Point(790, 274)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(354, 394)
+        Me.PictureBox2.Size = New System.Drawing.Size(354, 505)
         Me.PictureBox2.TabIndex = 11
         Me.PictureBox2.TabStop = False
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(977, 274)
+        Me.RichTextBox1.Location = New System.Drawing.Point(1150, 274)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(189, 394)
+        Me.RichTextBox1.Size = New System.Drawing.Size(115, 505)
         Me.RichTextBox1.TabIndex = 12
         Me.RichTextBox1.Text = ""
         '
@@ -176,7 +176,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1178, 674)
+        Me.ClientSize = New System.Drawing.Size(1277, 791)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.CheckBox2)
         Me.Controls.Add(Me.CheckBox1)
