@@ -1,0 +1,17 @@
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\bin\Debug\net6.0-windows\VB_Frequencies.exe
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\bin\Debug\net6.0-windows\VB_Frequencies.deps.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\bin\Debug\net6.0-windows\VB_Frequencies.runtimeconfig.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\bin\Debug\net6.0-windows\VB_Frequencies.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\bin\Debug\net6.0-windows\VB_Frequencies.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\VB_Frequencies.vbproj.AssemblyReference.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\VB_Frequencies.Form1.resources
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\VB_Frequencies.vbproj.GenerateResource.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\VB_Frequencies.GeneratedMSBuildEditorConfig.editorconfig
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\VB_Frequencies.AssemblyInfoInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\VB_Frequencies.AssemblyInfo.vb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\VB_Frequencies.vbproj.CoreCompileInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\VB_Frequencies.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\refint\VB_Frequencies.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\VB_Frequencies.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\VB_Frequencies.genruntimeconfig.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 04\VB_Frequencies\VB_Frequencies\obj\Debug\net6.0-windows\ref\VB_Frequencies.dll
