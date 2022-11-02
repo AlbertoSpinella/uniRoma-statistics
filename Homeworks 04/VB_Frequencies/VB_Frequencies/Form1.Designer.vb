@@ -168,7 +168,7 @@ Partial Class Form1
         Me.RichTextBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox2.Location = New System.Drawing.Point(12, 12)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(1154, 154)
+        Me.RichTextBox2.Size = New System.Drawing.Size(1253, 154)
         Me.RichTextBox2.TabIndex = 15
         Me.RichTextBox2.Text = resources.GetString("RichTextBox2.Text")
         '
