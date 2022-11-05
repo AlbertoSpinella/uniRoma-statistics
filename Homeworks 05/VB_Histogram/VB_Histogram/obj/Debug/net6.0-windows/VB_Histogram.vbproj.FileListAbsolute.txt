@@ -1,0 +1,17 @@
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\bin\Debug\net6.0-windows\VB_Histogram.exe
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\bin\Debug\net6.0-windows\VB_Histogram.deps.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\bin\Debug\net6.0-windows\VB_Histogram.runtimeconfig.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\bin\Debug\net6.0-windows\VB_Histogram.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\bin\Debug\net6.0-windows\VB_Histogram.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\VB_Histogram.vbproj.AssemblyReference.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\VB_Histogram.Form1.resources
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\VB_Histogram.vbproj.GenerateResource.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\VB_Histogram.GeneratedMSBuildEditorConfig.editorconfig
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\VB_Histogram.AssemblyInfoInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\VB_Histogram.AssemblyInfo.vb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\VB_Histogram.vbproj.CoreCompileInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\VB_Histogram.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\refint\VB_Histogram.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\VB_Histogram.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\VB_Histogram.genruntimeconfig.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram\VB_Histogram\obj\Debug\net6.0-windows\ref\VB_Histogram.dll
