@@ -54,18 +54,6 @@ Public Class Form1
         Return New Tuple(Of List(Of Point), List(Of Point), Integer)(PointsOfAbsoluteFrequency, PointsOfRelativeFrequency, LastY)
     End Function
 
-    Sub Print_Chart_Absolute()
-        Me.PictureBox1.Image = Bitmap_Chart
-    End Sub
-
-    Sub Print_Chart_Relative()
-        Me.PictureBox2.Image = Bitmap_Histogram
-    End Sub
-
-    Sub Print_Histogram()
-
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.InitializeGraphics()
 
@@ -115,8 +103,8 @@ Public Class Form1
             Graphics_Histogram.FillRectangle(BrushColor, New Rectangle(50, HeightPosition, CountWidth, 2))
         Next
 
-        Me.Print_Chart_Absolute()
-        Me.Print_Chart_Relative()
+        Me.PictureBox1.Image = Bitmap_Chart
+        Me.PictureBox2.Image = Bitmap_Histogram
 
     End Sub
 

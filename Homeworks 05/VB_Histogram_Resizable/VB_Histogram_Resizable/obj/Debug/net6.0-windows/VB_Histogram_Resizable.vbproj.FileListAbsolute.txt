@@ -1,0 +1,17 @@
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\bin\Debug\net6.0-windows\VB_Histogram_Resizable.exe
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\bin\Debug\net6.0-windows\VB_Histogram_Resizable.deps.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\bin\Debug\net6.0-windows\VB_Histogram_Resizable.runtimeconfig.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\bin\Debug\net6.0-windows\VB_Histogram_Resizable.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\bin\Debug\net6.0-windows\VB_Histogram_Resizable.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\VB_Histogram_Resizable.vbproj.AssemblyReference.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\VB_Histogram_Resizable.Form1.resources
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\VB_Histogram_Resizable.vbproj.GenerateResource.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\VB_Histogram_Resizable.GeneratedMSBuildEditorConfig.editorconfig
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\VB_Histogram_Resizable.AssemblyInfoInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\VB_Histogram_Resizable.AssemblyInfo.vb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\VB_Histogram_Resizable.vbproj.CoreCompileInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\VB_Histogram_Resizable.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\refint\VB_Histogram_Resizable.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\VB_Histogram_Resizable.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\VB_Histogram_Resizable.genruntimeconfig.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Histogram_Resizable\VB_Histogram_Resizable\obj\Debug\net6.0-windows\ref\VB_Histogram_Resizable.dll
