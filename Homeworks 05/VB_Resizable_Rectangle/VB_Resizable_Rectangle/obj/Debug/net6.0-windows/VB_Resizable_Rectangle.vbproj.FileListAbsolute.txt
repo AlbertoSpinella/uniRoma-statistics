@@ -1,0 +1,17 @@
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\bin\Debug\net6.0-windows\VB_Resizable_Rectangle.exe
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\bin\Debug\net6.0-windows\VB_Resizable_Rectangle.deps.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\bin\Debug\net6.0-windows\VB_Resizable_Rectangle.runtimeconfig.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\bin\Debug\net6.0-windows\VB_Resizable_Rectangle.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\bin\Debug\net6.0-windows\VB_Resizable_Rectangle.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\VB_Resizable_Rectangle.vbproj.AssemblyReference.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\VB_Resizable_Rectangle.Form1.resources
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\VB_Resizable_Rectangle.vbproj.GenerateResource.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\VB_Resizable_Rectangle.GeneratedMSBuildEditorConfig.editorconfig
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\VB_Resizable_Rectangle.AssemblyInfoInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\VB_Resizable_Rectangle.AssemblyInfo.vb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\VB_Resizable_Rectangle.vbproj.CoreCompileInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\VB_Resizable_Rectangle.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\refint\VB_Resizable_Rectangle.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\VB_Resizable_Rectangle.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\VB_Resizable_Rectangle.genruntimeconfig.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 05\VB_Resizable_Rectangle\VB_Resizable_Rectangle\obj\Debug\net6.0-windows\ref\VB_Resizable_Rectangle.dll
