@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homework 06\\VB_Mean_Variance\\VB_Mean_Variance\\VB_Mean_Variance.vbproj": {}
+    "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 06\\VB_Mean_Variance\\VB_Mean_Variance\\VB_Mean_Variance.vbproj": {}
   },
   "projects": {
-    "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homework 06\\VB_Mean_Variance\\VB_Mean_Variance\\VB_Mean_Variance.vbproj": {
+    "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 06\\VB_Mean_Variance\\VB_Mean_Variance\\VB_Mean_Variance.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homework 06\\VB_Mean_Variance\\VB_Mean_Variance\\VB_Mean_Variance.vbproj",
+        "projectUniqueName": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 06\\VB_Mean_Variance\\VB_Mean_Variance\\VB_Mean_Variance.vbproj",
         "projectName": "VB_Mean_Variance",
-        "projectPath": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homework 06\\VB_Mean_Variance\\VB_Mean_Variance\\VB_Mean_Variance.vbproj",
+        "projectPath": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 06\\VB_Mean_Variance\\VB_Mean_Variance\\VB_Mean_Variance.vbproj",
         "packagesPath": "C:\\Users\\alber\\.nuget\\packages\\",
-        "outputPath": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homework 06\\VB_Mean_Variance\\VB_Mean_Variance\\obj\\",
+        "outputPath": "C:\\AlbertoDoc\\dev\\AlbertoSpinella\\uniRoma-statistics\\Homeworks 06\\VB_Mean_Variance\\VB_Mean_Variance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alber\\AppData\\Roaming\\NuGet\\NuGet.Config",
