@@ -1,0 +1,17 @@
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\VB_Mean_Variance.vbproj.AssemblyReference.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\VB_Mean_Variance.Form1.resources
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\VB_Mean_Variance.vbproj.GenerateResource.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\VB_Mean_Variance.GeneratedMSBuildEditorConfig.editorconfig
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\VB_Mean_Variance.AssemblyInfoInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\VB_Mean_Variance.AssemblyInfo.vb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\VB_Mean_Variance.vbproj.CoreCompileInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\bin\Debug\net6.0-windows\VB_Mean_Variance.exe
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\bin\Debug\net6.0-windows\VB_Mean_Variance.deps.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\bin\Debug\net6.0-windows\VB_Mean_Variance.runtimeconfig.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\bin\Debug\net6.0-windows\VB_Mean_Variance.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\bin\Debug\net6.0-windows\VB_Mean_Variance.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\VB_Mean_Variance.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\refint\VB_Mean_Variance.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\VB_Mean_Variance.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\VB_Mean_Variance.genruntimeconfig.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homework 06\VB_Mean_Variance\VB_Mean_Variance\obj\Debug\net6.0-windows\ref\VB_Mean_Variance.dll
