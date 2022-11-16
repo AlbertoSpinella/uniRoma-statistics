@@ -37,9 +37,17 @@ Partial Class Form1
         Me.RichTextBox5 = New System.Windows.Forms.RichTextBox()
         Me.RichTextBox6 = New System.Windows.Forms.RichTextBox()
         Me.RichTextBox7 = New System.Windows.Forms.RichTextBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.TrackBar4 = New System.Windows.Forms.TrackBar()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -53,23 +61,23 @@ Partial Class Form1
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(12, 87)
+        Me.RichTextBox1.Location = New System.Drawing.Point(12, 177)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(272, 487)
+        Me.RichTextBox1.Size = New System.Drawing.Size(272, 376)
         Me.RichTextBox1.TabIndex = 1
         Me.RichTextBox1.Text = ""
         '
         'RichTextBox2
         '
-        Me.RichTextBox2.Location = New System.Drawing.Point(290, 87)
+        Me.RichTextBox2.Location = New System.Drawing.Point(290, 177)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(276, 166)
+        Me.RichTextBox2.Size = New System.Drawing.Size(395, 266)
         Me.RichTextBox2.TabIndex = 2
         Me.RichTextBox2.Text = ""
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(353, 12)
+        Me.TrackBar1.Location = New System.Drawing.Point(478, 12)
         Me.TrackBar1.Maximum = 200
         Me.TrackBar1.Minimum = 10
         Me.TrackBar1.Name = "TrackBar1"
@@ -81,7 +89,7 @@ Partial Class Form1
         '
         Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Location = New System.Drawing.Point(357, 49)
+        Me.TextBox1.Location = New System.Drawing.Point(482, 49)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 16)
         Me.TextBox1.TabIndex = 6
@@ -89,7 +97,7 @@ Partial Class Form1
         '
         'TrackBar2
         '
-        Me.TrackBar2.Location = New System.Drawing.Point(489, 12)
+        Me.TrackBar2.Location = New System.Drawing.Point(614, 12)
         Me.TrackBar2.Maximum = 1000
         Me.TrackBar2.Minimum = 10
         Me.TrackBar2.Name = "TrackBar2"
@@ -101,15 +109,15 @@ Partial Class Form1
         '
         Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Location = New System.Drawing.Point(493, 49)
+        Me.TextBox2.Location = New System.Drawing.Point(618, 49)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 16)
+        Me.TextBox2.Size = New System.Drawing.Size(155, 16)
         Me.TextBox2.TabIndex = 11
-        Me.TextBox2.Text = "Interval: [1 ; 1000]"
+        Me.TextBox2.Text = "ValuesInterval: [1 ; 1000]"
         '
         'TrackBar3
         '
-        Me.TrackBar3.Location = New System.Drawing.Point(635, 12)
+        Me.TrackBar3.Location = New System.Drawing.Point(828, 12)
         Me.TrackBar3.Maximum = 100
         Me.TrackBar3.Minimum = 1
         Me.TrackBar3.Name = "TrackBar3"
@@ -121,7 +129,7 @@ Partial Class Form1
         '
         Me.TextBox3.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Location = New System.Drawing.Point(639, 49)
+        Me.TextBox3.Location = New System.Drawing.Point(832, 49)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(136, 16)
         Me.TextBox3.TabIndex = 13
@@ -129,24 +137,24 @@ Partial Class Form1
         '
         'RichTextBox3
         '
-        Me.RichTextBox3.Location = New System.Drawing.Point(572, 87)
+        Me.RichTextBox3.Location = New System.Drawing.Point(290, 449)
         Me.RichTextBox3.Name = "RichTextBox3"
-        Me.RichTextBox3.Size = New System.Drawing.Size(243, 166)
+        Me.RichTextBox3.Size = New System.Drawing.Size(395, 49)
         Me.RichTextBox3.TabIndex = 14
         Me.RichTextBox3.Text = ""
         '
         'RichTextBox4
         '
-        Me.RichTextBox4.Location = New System.Drawing.Point(821, 87)
+        Me.RichTextBox4.Location = New System.Drawing.Point(290, 504)
         Me.RichTextBox4.Name = "RichTextBox4"
-        Me.RichTextBox4.Size = New System.Drawing.Size(273, 166)
+        Me.RichTextBox4.Size = New System.Drawing.Size(395, 49)
         Me.RichTextBox4.TabIndex = 15
         Me.RichTextBox4.Text = ""
         '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(157, 22)
+        Me.CheckBox1.Location = New System.Drawing.Point(157, 12)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(151, 34)
         Me.CheckBox1.TabIndex = 16
@@ -155,33 +163,85 @@ Partial Class Form1
         '
         'RichTextBox5
         '
-        Me.RichTextBox5.Location = New System.Drawing.Point(290, 259)
+        Me.RichTextBox5.Location = New System.Drawing.Point(691, 177)
         Me.RichTextBox5.Name = "RichTextBox5"
-        Me.RichTextBox5.Size = New System.Drawing.Size(276, 156)
+        Me.RichTextBox5.Size = New System.Drawing.Size(413, 266)
         Me.RichTextBox5.TabIndex = 17
         Me.RichTextBox5.Text = ""
         '
         'RichTextBox6
         '
-        Me.RichTextBox6.Location = New System.Drawing.Point(572, 259)
+        Me.RichTextBox6.Location = New System.Drawing.Point(691, 449)
         Me.RichTextBox6.Name = "RichTextBox6"
-        Me.RichTextBox6.Size = New System.Drawing.Size(243, 156)
+        Me.RichTextBox6.Size = New System.Drawing.Size(413, 49)
         Me.RichTextBox6.TabIndex = 18
         Me.RichTextBox6.Text = ""
         '
         'RichTextBox7
         '
-        Me.RichTextBox7.Location = New System.Drawing.Point(821, 259)
+        Me.RichTextBox7.Location = New System.Drawing.Point(691, 504)
         Me.RichTextBox7.Name = "RichTextBox7"
-        Me.RichTextBox7.Size = New System.Drawing.Size(273, 156)
+        Me.RichTextBox7.Size = New System.Drawing.Size(413, 49)
         Me.RichTextBox7.TabIndex = 19
         Me.RichTextBox7.Text = ""
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 559)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(550, 447)
+        Me.PictureBox1.TabIndex = 20
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Location = New System.Drawing.Point(568, 559)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(536, 447)
+        Me.PictureBox2.TabIndex = 21
+        Me.PictureBox2.TabStop = False
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(314, 12)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(134, 64)
+        Me.CheckBox2.TabIndex = 23
+        Me.CheckBox2.Text = "Use intervals" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(without this option," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "histograms won't" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "be displayed)"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'TrackBar4
+        '
+        Me.TrackBar4.Location = New System.Drawing.Point(325, 82)
+        Me.TrackBar4.Minimum = 2
+        Me.TrackBar4.Name = "TrackBar4"
+        Me.TrackBar4.Size = New System.Drawing.Size(104, 45)
+        Me.TrackBar4.TabIndex = 24
+        Me.TrackBar4.Value = 2
+        Me.TrackBar4.Visible = False
+        '
+        'TextBox4
+        '
+        Me.TextBox4.BackColor = System.Drawing.SystemColors.Control
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.TextBox4.Location = New System.Drawing.Point(329, 133)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 16)
+        Me.TextBox4.TabIndex = 25
+        Me.TextBox4.Text = "IntervalSize: 2"
+        Me.TextBox4.Visible = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1176, 586)
+        Me.ClientSize = New System.Drawing.Size(1176, 1018)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TrackBar4)
+        Me.Controls.Add(Me.CheckBox2)
+        Me.Controls.Add(Me.PictureBox2)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.RichTextBox7)
         Me.Controls.Add(Me.RichTextBox6)
         Me.Controls.Add(Me.RichTextBox5)
@@ -202,6 +262,9 @@ Partial Class Form1
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TrackBar4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -222,4 +285,9 @@ Partial Class Form1
     Friend WithEvents RichTextBox5 As RichTextBox
     Friend WithEvents RichTextBox6 As RichTextBox
     Friend WithEvents RichTextBox7 As RichTextBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents TrackBar4 As TrackBar
+    Friend WithEvents TextBox4 As TextBox
 End Class

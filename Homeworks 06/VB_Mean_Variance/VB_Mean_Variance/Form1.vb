@@ -85,22 +85,101 @@
         Return CurrentVariance / CurrentVarianceCount
     End Function
 
+    Function FindIntervalForValue(v As Double, IntervalSize As Double, ByRef ListOfIntervals As List(Of Interval)) As Interval
+
+
+        For Each Interval In ListOfIntervals
+
+            If Interval.ContainsValue(v) Then Return Interval
+        Next
+
+        'check the left
+        If v <= ListOfIntervals(0).LowerEnd Then
+            Do
+                Dim NewLeftInterval As New Interval
+                NewLeftInterval.UpperEnd = ListOfIntervals(0).LowerEnd
+                NewLeftInterval.LowerEnd = NewLeftInterval.UpperEnd - IntervalSize
+
+                ListOfIntervals.Insert(0, NewLeftInterval)
+
+                If NewLeftInterval.ContainsValue(v) Then Return NewLeftInterval
+            Loop
+
+        ElseIf v > ListOfIntervals(ListOfIntervals.Count - 1).UpperEnd Then
+            Do
+                Dim NewRightInterval As New Interval
+                NewRightInterval.LowerEnd = ListOfIntervals(ListOfIntervals.Count - 1).UpperEnd
+                NewRightInterval.UpperEnd = NewRightInterval.LowerEnd + IntervalSize
+
+                ListOfIntervals.Add(NewRightInterval)
+
+                If NewRightInterval.ContainsValue(v) Then Return NewRightInterval
+            Loop
+        Else
+            Throw New Exception("Not expected occurence")
+        End If
+    End Function
+
+    Function CalculateIntervals(ListOfValues As SortedDictionary(Of Double, Integer)) As SortedDictionary(Of Interval, Integer)
+
+        Dim StartingEndPoint As Double = 0
+        Dim IntervalSize As Double = Me.TrackBar4.Value
+
+        Dim Interval_0 As New Interval
+        Interval_0.LowerEnd = StartingEndPoint
+        Interval_0.UpperEnd = Interval_0.LowerEnd + IntervalSize
+
+        Dim ListOfIntervals As New List(Of Interval)
+        ListOfIntervals.Add(Interval_0)
+
+        Dim Intervals As New SortedDictionary(Of Interval, Integer)
+
+        For Each kvp As KeyValuePair(Of Double, Integer) In ListOfValues
+            Dim IntervalWhereTheValueFalls = Me.FindIntervalForValue(kvp.Key, IntervalSize, ListOfIntervals)
+            If Intervals.ContainsKey(IntervalWhereTheValueFalls) Then
+                Intervals(IntervalWhereTheValueFalls) += kvp.Value
+            Else
+                Intervals.Add(IntervalWhereTheValueFalls, kvp.Value)
+            End If
+        Next
+
+        Return Intervals
+    End Function
+
     Sub PrintMeans(ListOfMeans As SortedDictionary(Of Double, Integer))
         Me.RichTextBox2.Clear()
         Me.RichTextBox2.AppendText("List of means" & vbCrLf)
-        For Each kvp As KeyValuePair(Of Double, Integer) In ListOfMeans
-            Me.RichTextBox2.AppendText(kvp.Key & ": " & kvp.Value & vbCrLf)
-        Next
-        Me.RichTextBox2.AppendText(vbCrLf)
+
+        If Me.CheckBox2.Checked Then
+            Dim MeansIntervals As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfMeans)
+            For Each IntervalOccurrencies In MeansIntervals
+                Me.RichTextBox2.AppendText(IntervalOccurrencies.Key.ToString & ": " & IntervalOccurrencies.Value & vbCrLf)
+            Next
+            Me.RichTextBox2.AppendText(vbCrLf)
+        Else
+            For Each kvp As KeyValuePair(Of Double, Integer) In ListOfMeans
+                Me.RichTextBox2.AppendText(kvp.Key & ": " & kvp.Value & vbCrLf)
+            Next
+            Me.RichTextBox2.AppendText(vbCrLf)
+        End If
     End Sub
 
     Sub PrintVariances(ListOfVariances As SortedDictionary(Of Double, Integer))
         Me.RichTextBox5.Clear()
         Me.RichTextBox5.AppendText("List of variances" & vbCrLf)
-        For Each kvp As KeyValuePair(Of Double, Integer) In ListOfVariances
-            Me.RichTextBox5.AppendText(kvp.Key & ": " & kvp.Value & vbCrLf)
-        Next
-        Me.RichTextBox5.AppendText(vbCrLf)
+
+        If Me.CheckBox2.Checked Then
+            Dim VariancesIntervals As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfVariances)
+            For Each IntervalOccurrencies In VariancesIntervals
+                Me.RichTextBox5.AppendText(IntervalOccurrencies.Key.ToString & ": " & IntervalOccurrencies.Value & vbCrLf)
+            Next
+            Me.RichTextBox5.AppendText(vbCrLf)
+        Else
+            For Each kvp As KeyValuePair(Of Double, Integer) In ListOfVariances
+                Me.RichTextBox5.AppendText(kvp.Key & ": " & kvp.Value & vbCrLf)
+            Next
+            Me.RichTextBox5.AppendText(vbCrLf)
+        End If
     End Sub
 
     Sub PrintMeanOfMeans(MeanOfMeans As Double)
@@ -194,11 +273,26 @@
     End Sub
 
     Private Sub TrackBar2_Scroll(sender As Object, e As EventArgs) Handles TrackBar2.Scroll
-        Me.TextBox2.Text = "Interval: [1 ; " & Me.TrackBar2.Value & "]"
+        Me.TextBox2.Text = "ValuesInterval: [1 ; " & Me.TrackBar2.Value & "]"
     End Sub
 
     Private Sub TrackBar3_Scroll(sender As Object, e As EventArgs) Handles TrackBar3.Scroll
         Me.TextBox3.Text = "ExperimentsCount: " & Me.TrackBar3.Value
     End Sub
 
+    Private Sub TrackBar4_Scroll(sender As Object, e As EventArgs) Handles TrackBar4.Scroll
+        Me.TextBox4.Text = "IntervalSize: " & Me.TrackBar4.Value
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+
+        If sender.Checked = True Then
+            Me.TrackBar4.Visible = True
+            Me.TextBox4.Visible = True
+        Else
+            Me.TrackBar4.Visible = False
+            Me.TextBox4.Visible = False
+        End If
+
+    End Sub
 End Class
