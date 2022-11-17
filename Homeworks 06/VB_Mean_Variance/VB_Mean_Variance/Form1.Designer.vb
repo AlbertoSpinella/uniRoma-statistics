@@ -42,6 +42,7 @@ Partial Class Form1
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.TrackBar4 = New System.Windows.Forms.TrackBar()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,15 +64,15 @@ Partial Class Form1
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(12, 177)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(272, 376)
+        Me.RichTextBox1.Size = New System.Drawing.Size(304, 266)
         Me.RichTextBox1.TabIndex = 1
         Me.RichTextBox1.Text = ""
         '
         'RichTextBox2
         '
-        Me.RichTextBox2.Location = New System.Drawing.Point(290, 177)
+        Me.RichTextBox2.Location = New System.Drawing.Point(322, 177)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(395, 266)
+        Me.RichTextBox2.Size = New System.Drawing.Size(395, 156)
         Me.RichTextBox2.TabIndex = 2
         Me.RichTextBox2.Text = ""
         '
@@ -98,12 +99,12 @@ Partial Class Form1
         'TrackBar2
         '
         Me.TrackBar2.Location = New System.Drawing.Point(614, 12)
-        Me.TrackBar2.Maximum = 1000
-        Me.TrackBar2.Minimum = 10
+        Me.TrackBar2.Maximum = 50
+        Me.TrackBar2.Minimum = 5
         Me.TrackBar2.Name = "TrackBar2"
         Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar2.TabIndex = 10
-        Me.TrackBar2.Value = 1000
+        Me.TrackBar2.Value = 5
         '
         'TextBox2
         '
@@ -113,7 +114,7 @@ Partial Class Form1
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(155, 16)
         Me.TextBox2.TabIndex = 11
-        Me.TextBox2.Text = "ValuesInterval: [1 ; 1000]"
+        Me.TextBox2.Text = "ValuesInterval: [1 ; 10]"
         '
         'TrackBar3
         '
@@ -137,7 +138,7 @@ Partial Class Form1
         '
         'RichTextBox3
         '
-        Me.RichTextBox3.Location = New System.Drawing.Point(290, 449)
+        Me.RichTextBox3.Location = New System.Drawing.Point(322, 339)
         Me.RichTextBox3.Name = "RichTextBox3"
         Me.RichTextBox3.Size = New System.Drawing.Size(395, 49)
         Me.RichTextBox3.TabIndex = 14
@@ -145,7 +146,7 @@ Partial Class Form1
         '
         'RichTextBox4
         '
-        Me.RichTextBox4.Location = New System.Drawing.Point(290, 504)
+        Me.RichTextBox4.Location = New System.Drawing.Point(322, 394)
         Me.RichTextBox4.Name = "RichTextBox4"
         Me.RichTextBox4.Size = New System.Drawing.Size(395, 49)
         Me.RichTextBox4.TabIndex = 15
@@ -163,80 +164,91 @@ Partial Class Form1
         '
         'RichTextBox5
         '
-        Me.RichTextBox5.Location = New System.Drawing.Point(691, 177)
+        Me.RichTextBox5.Location = New System.Drawing.Point(723, 177)
         Me.RichTextBox5.Name = "RichTextBox5"
-        Me.RichTextBox5.Size = New System.Drawing.Size(413, 266)
+        Me.RichTextBox5.Size = New System.Drawing.Size(395, 156)
         Me.RichTextBox5.TabIndex = 17
         Me.RichTextBox5.Text = ""
         '
         'RichTextBox6
         '
-        Me.RichTextBox6.Location = New System.Drawing.Point(691, 449)
+        Me.RichTextBox6.Location = New System.Drawing.Point(723, 339)
         Me.RichTextBox6.Name = "RichTextBox6"
-        Me.RichTextBox6.Size = New System.Drawing.Size(413, 49)
+        Me.RichTextBox6.Size = New System.Drawing.Size(395, 49)
         Me.RichTextBox6.TabIndex = 18
         Me.RichTextBox6.Text = ""
         '
         'RichTextBox7
         '
-        Me.RichTextBox7.Location = New System.Drawing.Point(691, 504)
+        Me.RichTextBox7.Location = New System.Drawing.Point(723, 394)
         Me.RichTextBox7.Name = "RichTextBox7"
-        Me.RichTextBox7.Size = New System.Drawing.Size(413, 49)
+        Me.RichTextBox7.Size = New System.Drawing.Size(395, 49)
         Me.RichTextBox7.TabIndex = 19
         Me.RichTextBox7.Text = ""
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 559)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 449)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(550, 447)
+        Me.PictureBox1.Size = New System.Drawing.Size(550, 550)
         Me.PictureBox1.TabIndex = 20
         Me.PictureBox1.TabStop = False
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(568, 559)
+        Me.PictureBox2.Location = New System.Drawing.Point(568, 449)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(536, 447)
+        Me.PictureBox2.Size = New System.Drawing.Size(550, 550)
         Me.PictureBox2.TabIndex = 21
         Me.PictureBox2.TabStop = False
         '
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Checked = True
+        Me.CheckBox2.CheckState = System.Windows.Forms.CheckState.Checked
         Me.CheckBox2.Location = New System.Drawing.Point(314, 12)
         Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(134, 64)
+        Me.CheckBox2.Size = New System.Drawing.Size(92, 19)
         Me.CheckBox2.TabIndex = 23
-        Me.CheckBox2.Text = "Use intervals" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(without this option," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "histograms won't" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "be displayed)"
+        Me.CheckBox2.Text = "Use intervals" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
         'TrackBar4
         '
-        Me.TrackBar4.Location = New System.Drawing.Point(325, 82)
-        Me.TrackBar4.Minimum = 2
+        Me.TrackBar4.Location = New System.Drawing.Point(323, 60)
+        Me.TrackBar4.Maximum = 5
+        Me.TrackBar4.Minimum = 1
         Me.TrackBar4.Name = "TrackBar4"
         Me.TrackBar4.Size = New System.Drawing.Size(104, 45)
         Me.TrackBar4.TabIndex = 24
-        Me.TrackBar4.Value = 2
-        Me.TrackBar4.Visible = False
+        Me.TrackBar4.Value = 1
         '
         'TextBox4
         '
         Me.TextBox4.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Location = New System.Drawing.Point(329, 133)
+        Me.TextBox4.Location = New System.Drawing.Point(327, 111)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 16)
         Me.TextBox4.TabIndex = 25
         Me.TextBox4.Text = "IntervalSize: 2"
-        Me.TextBox4.Visible = False
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(696, 1007)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 26
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1176, 1018)
+        Me.ClientSize = New System.Drawing.Size(1124, 1019)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TrackBar4)
         Me.Controls.Add(Me.CheckBox2)
@@ -290,4 +302,5 @@ Partial Class Form1
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents TrackBar4 As TrackBar
     Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Button2 As Button
 End Class

@@ -1,17 +1,23 @@
 ﻿Public Class Form1
 
-    Public Bitmap_Histogram As Bitmap
-    Public Graphics_Histogram As Graphics
+    Public Bitmap_Histogram_Mean As Bitmap
+    Public Graphics_Histogram_Mean As Graphics
+    Public Bitmap_Histogram_Variance As Bitmap
+    Public Graphics_Histogram_Variance As Graphics
     Public r As New Random
 
     Dim MinX As Double = 0
     Dim MinY As Double = 0
     Public MaxX As Double = 100
     Public MaxY As Double = 100
-    'Sub InitializeGraphics()
-    '    Me.Bitmap_Histogram = New Bitmap(Me.PictureBox1.Width, Me.PictureBox1.Height)
-    '    Me.Graphics_Histogram = Graphics.FromImage(Bitmap_Histogram)
-    'End Sub
+    Public IntervalSize As Integer
+
+    Sub InitializeGraphics()
+        Me.Bitmap_Histogram_Mean = New Bitmap(Me.PictureBox1.Width, Me.PictureBox1.Height)
+        Me.Graphics_Histogram_Mean = Graphics.FromImage(Bitmap_Histogram_Mean)
+        Me.Bitmap_Histogram_Variance = New Bitmap(Me.PictureBox2.Width, Me.PictureBox2.Height)
+        Me.Graphics_Histogram_Variance = Graphics.FromImage(Bitmap_Histogram_Variance)
+    End Sub
 
     Function CreateRandomNumbers(Quantity As Integer, Min As Integer, Max As Integer) As SortedDictionary(Of Integer, Integer)
         Dim RandomNumbers As New SortedDictionary(Of Integer, Integer)
@@ -87,13 +93,11 @@
 
     Function FindIntervalForValue(v As Double, IntervalSize As Double, ByRef ListOfIntervals As List(Of Interval)) As Interval
 
-
         For Each Interval In ListOfIntervals
 
             If Interval.ContainsValue(v) Then Return Interval
         Next
 
-        'check the left
         If v <= ListOfIntervals(0).LowerEnd Then
             Do
                 Dim NewLeftInterval As New Interval
@@ -123,7 +127,6 @@
     Function CalculateIntervals(ListOfValues As SortedDictionary(Of Double, Integer)) As SortedDictionary(Of Interval, Integer)
 
         Dim StartingEndPoint As Double = 0
-        Dim IntervalSize As Double = Me.TrackBar4.Value
 
         Dim Interval_0 As New Interval
         Interval_0.LowerEnd = StartingEndPoint
@@ -202,17 +205,43 @@
         Me.RichTextBox7.AppendText("Variance of variances: " & VarianceOfVariances & vbCrLf)
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        'Me.InitializeGraphics()
+    Sub PlotHistogramMean(ListOfMeans As SortedDictionary(Of Double, Integer), VirtualWindow_Histogram_Mean As Rectangle, Max As Integer)
+        Dim MeansIntervals As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfMeans)
+        Dim MaxElement As Double = 0
+        For Each kvp As KeyValuePair(Of Interval, Integer) In MeansIntervals
+            If kvp.Value > MaxElement Then
+                MaxElement = kvp.Value
+            End If
+        Next
+        For Each kvp As KeyValuePair(Of Interval, Integer) In MeansIntervals
 
-        'Dim VirtualWindow_Histogram As New Rectangle(25, 25, Me.Bitmap_Histogram.Width - 50, Me.Bitmap_Histogram.Height - 50)
-        'Graphics_Histogram.DrawRectangle(Pens.Black, VirtualWindow_Histogram)
+            Dim X As Double = VirtualWindow_Histogram_Mean.Location.X + VirtualWindow_Histogram_Mean.Width * (kvp.Key.LowerEnd / Max)
+            Dim Y As Double = VirtualWindow_Histogram_Mean.Location.Y + VirtualWindow_Histogram_Mean.Height * (1 - (kvp.Value / MaxElement))
+            Dim W As Double = VirtualWindow_Histogram_Mean.Width * (IntervalSize / Max)
+            Dim H As Double = VirtualWindow_Histogram_Mean.Height * (kvp.Value / MaxElement)
+
+            Graphics_Histogram_Mean.DrawRectangle(Pens.Black, New Rectangle(X, Y, W, H))
+            Graphics_Histogram_Mean.FillRectangle(Brushes.Red, New Rectangle(X + 1, Y + 1, W - 1, H - 1))
+        Next
+    End Sub
+
+    Sub PlotHistogramVariance(ListOfVariances As SortedDictionary(Of Double, Integer), VirtualWindow_Histogram_Variance As Rectangle, Max As Integer)
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.InitializeGraphics()
+
+        Dim VirtualWindow_Histogram_Mean As New Rectangle(25, 25, Me.Bitmap_Histogram_Mean.Width - 50, Me.Bitmap_Histogram_Mean.Height - 50)
+        Graphics_Histogram_Mean.DrawRectangle(Pens.Black, VirtualWindow_Histogram_Mean)
+        Dim VirtualWindow_Histogram_Variance As New Rectangle(25, 25, Me.Bitmap_Histogram_Variance.Width - 50, Me.Bitmap_Histogram_Variance.Height - 50)
+        Graphics_Histogram_Variance.DrawRectangle(Pens.Black, VirtualWindow_Histogram_Variance)
 
         Me.RichTextBox1.Clear()
 
         Dim Quantity As Integer = Me.TrackBar1.Value
         Dim Min As Integer = 1
-        Dim Max As Integer = Me.TrackBar2.Value
+        Dim Max As Integer = Me.TrackBar2.Value * 2
         Dim ExperimentsCount As Integer = Me.TrackBar3.Value
 
         Dim ListOfMeans As New SortedDictionary(Of Double, Integer)
@@ -253,27 +282,21 @@
         Me.PrintVarianceOfMeans(VarianceOfMeans)
         Me.PrintVarianceOfVariances(VarianceOfVariances)
 
+        Me.PlotHistogramMean(ListOfMeans, VirtualWindow_Histogram_Mean, Max)
+        Me.PlotHistogramVariance(ListOfVariances, VirtualWindow_Histogram_Variance, Max)
+
+
+        Me.PictureBox1.Image = Bitmap_Histogram_Mean
+        Me.PictureBox2.Image = Bitmap_Histogram_Variance
+
     End Sub
-
-
-    Function FromXWorldToXVirtual(X As Double, Left As Integer, W As Integer, Max As Integer) As Integer
-
-        Return ((Left + W) / Max) * X - 10
-
-    End Function
-
-    Function FromYWorldToYVirtual(Y As Double, Top As Integer, H As Integer, Max As Integer) As Integer
-
-        Return ((Top + H) / Max) * Y - 5
-
-    End Function
 
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         Me.TextBox1.Text = "Quantity: " & Me.TrackBar1.Value
     End Sub
 
     Private Sub TrackBar2_Scroll(sender As Object, e As EventArgs) Handles TrackBar2.Scroll
-        Me.TextBox2.Text = "ValuesInterval: [1 ; " & Me.TrackBar2.Value & "]"
+        Me.TextBox2.Text = "ValuesInterval: [1 ; " & Me.TrackBar2.Value * 2 & "]"
     End Sub
 
     Private Sub TrackBar3_Scroll(sender As Object, e As EventArgs) Handles TrackBar3.Scroll
@@ -281,7 +304,7 @@
     End Sub
 
     Private Sub TrackBar4_Scroll(sender As Object, e As EventArgs) Handles TrackBar4.Scroll
-        Me.TextBox4.Text = "IntervalSize: " & Me.TrackBar4.Value
+        Me.TextBox4.Text = "IntervalSize: " & Me.TrackBar4.Value * 2
     End Sub
 
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
@@ -294,5 +317,13 @@
             Me.TextBox4.Visible = False
         End If
 
+    End Sub
+
+    Private Sub TrackBar4_ValueChanged(sender As Object, e As EventArgs) Handles TrackBar4.ValueChanged
+        IntervalSize = Me.TrackBar4.Value * 2
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        IntervalSize = Me.TrackBar4.Value * 2
     End Sub
 End Class
