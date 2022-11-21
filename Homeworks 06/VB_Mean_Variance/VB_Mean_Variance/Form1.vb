@@ -6,11 +6,14 @@
     Public Graphics_Histogram_Variance As Graphics
     Public r As New Random
 
+
+    Public Max As Integer = 2
     Dim MinX As Double = 0
     Dim MinY As Double = 0
     Public MaxX As Double = 100
     Public MaxY As Double = 100
     Public IntervalSize As Integer
+    Public IntervalSizeVariance As Integer
 
     Sub InitializeGraphics()
         Me.Bitmap_Histogram_Mean = New Bitmap(Me.PictureBox1.Width, Me.PictureBox1.Height)
@@ -124,7 +127,7 @@
         End If
     End Function
 
-    Function CalculateIntervals(ListOfValues As SortedDictionary(Of Double, Integer)) As SortedDictionary(Of Interval, Integer)
+    Function CalculateIntervals(ListOfValues As SortedDictionary(Of Double, Integer), IntervalSize As Double) As SortedDictionary(Of Interval, Integer)
 
         Dim StartingEndPoint As Double = 0
 
@@ -149,41 +152,52 @@
         Return Intervals
     End Function
 
-    Sub PrintMeans(ListOfMeans As SortedDictionary(Of Double, Integer))
+    Function PrintMeans(ListOfMeans As SortedDictionary(Of Double, Integer)) As Integer
         Me.RichTextBox2.Clear()
         Me.RichTextBox2.AppendText("List of means" & vbCrLf)
 
         If Me.CheckBox2.Checked Then
-            Dim MeansIntervals As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfMeans)
+            Dim MeansIntervals As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfMeans, IntervalSize)
             For Each IntervalOccurrencies In MeansIntervals
                 Me.RichTextBox2.AppendText(IntervalOccurrencies.Key.ToString & ": " & IntervalOccurrencies.Value & vbCrLf)
             Next
             Me.RichTextBox2.AppendText(vbCrLf)
+            Return MeansIntervals.Count
         Else
             For Each kvp As KeyValuePair(Of Double, Integer) In ListOfMeans
                 Me.RichTextBox2.AppendText(kvp.Key & ": " & kvp.Value & vbCrLf)
             Next
             Me.RichTextBox2.AppendText(vbCrLf)
+            Return ListOfMeans.Count
         End If
-    End Sub
+    End Function
 
-    Sub PrintVariances(ListOfVariances As SortedDictionary(Of Double, Integer))
+    Function PrintVariances(ListOfVariances As SortedDictionary(Of Double, Integer), MeansCount As Integer) As Integer
         Me.RichTextBox5.Clear()
         Me.RichTextBox5.AppendText("List of variances" & vbCrLf)
 
         If Me.CheckBox2.Checked Then
-            Dim VariancesIntervals As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfVariances)
-            For Each IntervalOccurrencies In VariancesIntervals
+
+            Dim VariancesIntervals As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfVariances, IntervalSize)
+            Dim First As Double = VariancesIntervals.Keys.First().LowerEnd
+            Dim Last As Double = VariancesIntervals.Keys.Last().UpperEnd
+            IntervalSizeVariance = (Last - First) / MeansCount
+
+            Dim VariancesIntervalsAdapted As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfVariances, IntervalSizeVariance)
+
+            For Each IntervalOccurrencies In VariancesIntervalsAdapted
                 Me.RichTextBox5.AppendText(IntervalOccurrencies.Key.ToString & ": " & IntervalOccurrencies.Value & vbCrLf)
             Next
             Me.RichTextBox5.AppendText(vbCrLf)
+            Return VariancesIntervalsAdapted.Count
         Else
             For Each kvp As KeyValuePair(Of Double, Integer) In ListOfVariances
                 Me.RichTextBox5.AppendText(kvp.Key & ": " & kvp.Value & vbCrLf)
             Next
             Me.RichTextBox5.AppendText(vbCrLf)
+            Return ListOfVariances.Count
         End If
-    End Sub
+    End Function
 
     Sub PrintMeanOfMeans(MeanOfMeans As Double)
         Me.RichTextBox3.Clear()
@@ -206,7 +220,7 @@
     End Sub
 
     Sub PlotHistogramMean(ListOfMeans As SortedDictionary(Of Double, Integer), VirtualWindow_Histogram_Mean As Rectangle, Max As Integer)
-        Dim MeansIntervals As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfMeans)
+        Dim MeansIntervals As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfMeans, IntervalSize)
         Dim MaxElement As Double = 0
         For Each kvp As KeyValuePair(Of Interval, Integer) In MeansIntervals
             If kvp.Value > MaxElement Then
@@ -225,8 +239,40 @@
         Next
     End Sub
 
-    Sub PlotHistogramVariance(ListOfVariances As SortedDictionary(Of Double, Integer), VirtualWindow_Histogram_Variance As Rectangle, Max As Integer)
+    Sub PlotHistogramVariance(ListOfVariances As SortedDictionary(Of Double, Integer), VirtualWindow_Histogram_Variance As Rectangle, DistinctVariancesCount As Integer, MeansCount As Integer)
+        Dim VariancesIntervals As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfVariances, IntervalSize)
 
+        Dim First As Double = VariancesIntervals.Keys.First().LowerEnd
+        Dim Last As Double = VariancesIntervals.Keys.Last().UpperEnd
+        IntervalSizeVariance = (Last - First) / MeansCount
+
+        Dim VariancesIntervalsAdapted As SortedDictionary(Of Interval, Integer) = Me.CalculateIntervals(ListOfVariances, IntervalSizeVariance)
+
+        Dim MaxElement As Double = 0
+        Dim FirstLowerEnd As Double = VariancesIntervalsAdapted.Keys.First().LowerEnd
+        Dim LastUpperEnd As Double = VariancesIntervalsAdapted.Keys.Last().UpperEnd
+
+        For Each kvp As KeyValuePair(Of Interval, Integer) In VariancesIntervalsAdapted
+            If kvp.Value > MaxElement Then
+                MaxElement = kvp.Value
+            End If
+        Next
+
+
+        For Each kvp As KeyValuePair(Of Interval, Integer) In VariancesIntervalsAdapted
+
+            Dim X As Double = VirtualWindow_Histogram_Variance.Location.X + VirtualWindow_Histogram_Variance.Width * ((kvp.Key.LowerEnd - FirstLowerEnd) / (LastUpperEnd - FirstLowerEnd))
+            Dim Y As Double = VirtualWindow_Histogram_Variance.Location.Y + VirtualWindow_Histogram_Variance.Height * (1 - (kvp.Value / MaxElement))
+            Dim W As Double = VirtualWindow_Histogram_Variance.Width * (1 / DistinctVariancesCount)
+            Dim H As Double = VirtualWindow_Histogram_Variance.Height * (kvp.Value / MaxElement)
+
+            If W < 2 Then
+                W = 2
+            End If
+
+            Graphics_Histogram_Variance.DrawRectangle(Pens.Black, New Rectangle(X, Y, W, H))
+            Graphics_Histogram_Variance.FillRectangle(Brushes.Cyan, New Rectangle(X + 1, Y + 1, W - 1, H - 1))
+        Next
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -241,7 +287,7 @@
 
         Dim Quantity As Integer = Me.TrackBar1.Value
         Dim Min As Integer = 1
-        Dim Max As Integer = Me.TrackBar2.Value * 2
+        Max = Me.TrackBar2.Value * 2
         Dim ExperimentsCount As Integer = Me.TrackBar3.Value
 
         Dim ListOfMeans As New SortedDictionary(Of Double, Integer)
@@ -270,8 +316,8 @@
 
         Next
 
-        Me.PrintMeans(ListOfMeans)
-        Me.PrintVariances(ListOfVariances)
+        Dim DistinctMeansCount As Integer = Me.PrintMeans(ListOfMeans)
+        Dim DistinctVariancesCount As Integer = Me.PrintVariances(ListOfVariances, DistinctMeansCount)
 
         Dim MeanOfMeans As Double = Me.CalculateMeanOfDoubles(ListOfMeans)
         Dim MeanOfVariances As Double = Me.CalculateMeanOfDoubles(ListOfVariances)
@@ -283,7 +329,7 @@
         Me.PrintVarianceOfVariances(VarianceOfVariances)
 
         Me.PlotHistogramMean(ListOfMeans, VirtualWindow_Histogram_Mean, Max)
-        Me.PlotHistogramVariance(ListOfVariances, VirtualWindow_Histogram_Variance, Max)
+        Me.PlotHistogramVariance(ListOfVariances, VirtualWindow_Histogram_Variance, DistinctVariancesCount, DistinctMeansCount)
 
 
         Me.PictureBox1.Image = Bitmap_Histogram_Mean
@@ -325,5 +371,6 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         IntervalSize = Me.TrackBar4.Value * 2
+        Max = Me.TrackBar2.Value * 2
     End Sub
 End Class

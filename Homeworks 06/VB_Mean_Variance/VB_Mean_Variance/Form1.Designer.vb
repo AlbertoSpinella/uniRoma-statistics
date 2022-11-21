@@ -42,7 +42,6 @@ Partial Class Form1
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.TrackBar4 = New System.Windows.Forms.TrackBar()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,6 +69,7 @@ Partial Class Form1
         '
         'RichTextBox2
         '
+        Me.RichTextBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox2.Location = New System.Drawing.Point(322, 177)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.Size = New System.Drawing.Size(395, 156)
@@ -99,7 +99,7 @@ Partial Class Form1
         'TrackBar2
         '
         Me.TrackBar2.Location = New System.Drawing.Point(614, 12)
-        Me.TrackBar2.Maximum = 50
+        Me.TrackBar2.Maximum = 500
         Me.TrackBar2.Minimum = 5
         Me.TrackBar2.Name = "TrackBar2"
         Me.TrackBar2.Size = New System.Drawing.Size(104, 45)
@@ -138,6 +138,7 @@ Partial Class Form1
         '
         'RichTextBox3
         '
+        Me.RichTextBox3.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox3.Location = New System.Drawing.Point(322, 339)
         Me.RichTextBox3.Name = "RichTextBox3"
         Me.RichTextBox3.Size = New System.Drawing.Size(395, 49)
@@ -146,6 +147,7 @@ Partial Class Form1
         '
         'RichTextBox4
         '
+        Me.RichTextBox4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox4.Location = New System.Drawing.Point(322, 394)
         Me.RichTextBox4.Name = "RichTextBox4"
         Me.RichTextBox4.Size = New System.Drawing.Size(395, 49)
@@ -164,6 +166,7 @@ Partial Class Form1
         '
         'RichTextBox5
         '
+        Me.RichTextBox5.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox5.Location = New System.Drawing.Point(723, 177)
         Me.RichTextBox5.Name = "RichTextBox5"
         Me.RichTextBox5.Size = New System.Drawing.Size(395, 156)
@@ -172,6 +175,7 @@ Partial Class Form1
         '
         'RichTextBox6
         '
+        Me.RichTextBox6.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox6.Location = New System.Drawing.Point(723, 339)
         Me.RichTextBox6.Name = "RichTextBox6"
         Me.RichTextBox6.Size = New System.Drawing.Size(395, 49)
@@ -180,6 +184,7 @@ Partial Class Form1
         '
         'RichTextBox7
         '
+        Me.RichTextBox7.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox7.Location = New System.Drawing.Point(723, 394)
         Me.RichTextBox7.Name = "RichTextBox7"
         Me.RichTextBox7.Size = New System.Drawing.Size(395, 49)
@@ -234,21 +239,11 @@ Partial Class Form1
         Me.TextBox4.TabIndex = 25
         Me.TextBox4.Text = "IntervalSize: 2"
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(696, 1007)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 26
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1124, 1019)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(1148, 1014)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TrackBar4)
         Me.Controls.Add(Me.CheckBox2)
@@ -302,5 +297,4 @@ Partial Class Form1
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents TrackBar4 As TrackBar
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Button2 As Button
 End Class
