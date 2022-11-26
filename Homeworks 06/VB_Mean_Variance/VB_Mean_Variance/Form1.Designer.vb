@@ -265,7 +265,7 @@ Partial Class Form1
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Alberto Spinella - 2076802 - VB"
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()

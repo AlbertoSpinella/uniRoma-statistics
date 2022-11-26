@@ -45,23 +45,25 @@ Partial Class Form1
         '
         'RichTextBox1
         '
-        Me.RichTextBox1.Location = New System.Drawing.Point(1033, 340)
+        Me.RichTextBox1.Location = New System.Drawing.Point(868, 249)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(133, 333)
+        Me.RichTextBox1.Size = New System.Drawing.Size(180, 424)
         Me.RichTextBox1.TabIndex = 0
         Me.RichTextBox1.Text = ""
         '
         'RichTextBox2
         '
+        Me.RichTextBox2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox2.Location = New System.Drawing.Point(12, 12)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(1154, 147)
+        Me.RichTextBox2.Size = New System.Drawing.Size(1036, 118)
         Me.RichTextBox2.TabIndex = 1
-        Me.RichTextBox2.Text = ""
+        Me.RichTextBox2.Text = "05 - Statistics Homework within 03/10/2022" & Global.Microsoft.VisualBasic.ChrW(10) & "Alberto Spinella - 2076802" & Global.Microsoft.VisualBasic.ChrW(10) & "Teacher: pr" &
+    "ofessor Tommaso Gastaldi" & Global.Microsoft.VisualBasic.ChrW(10) & "Used language: VB"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 165)
+        Me.Button1.Location = New System.Drawing.Point(12, 136)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(154, 78)
         Me.Button1.TabIndex = 2
@@ -70,7 +72,7 @@ Partial Class Form1
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(243, 175)
+        Me.TrackBar1.Location = New System.Drawing.Point(243, 146)
         Me.TrackBar1.Maximum = 200
         Me.TrackBar1.Minimum = 10
         Me.TrackBar1.Name = "TrackBar1"
@@ -82,7 +84,7 @@ Partial Class Form1
         '
         Me.TextBox1.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox1.Location = New System.Drawing.Point(247, 220)
+        Me.TextBox1.Location = New System.Drawing.Point(247, 191)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 16)
         Me.TextBox1.TabIndex = 4
@@ -92,7 +94,7 @@ Partial Class Form1
         '
         Me.TextBox2.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox2.Location = New System.Drawing.Point(493, 220)
+        Me.TextBox2.Location = New System.Drawing.Point(493, 191)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(145, 16)
         Me.TextBox2.TabIndex = 6
@@ -100,7 +102,7 @@ Partial Class Form1
         '
         'TrackBar2
         '
-        Me.TrackBar2.Location = New System.Drawing.Point(489, 175)
+        Me.TrackBar2.Location = New System.Drawing.Point(489, 146)
         Me.TrackBar2.Maximum = 500
         Me.TrackBar2.Minimum = 1
         Me.TrackBar2.Name = "TrackBar2"
@@ -112,7 +114,7 @@ Partial Class Form1
         '
         Me.TextBox3.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox3.Location = New System.Drawing.Point(715, 220)
+        Me.TextBox3.Location = New System.Drawing.Point(715, 191)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(100, 16)
         Me.TextBox3.TabIndex = 8
@@ -120,7 +122,7 @@ Partial Class Form1
         '
         'TrackBar3
         '
-        Me.TrackBar3.Location = New System.Drawing.Point(711, 175)
+        Me.TrackBar3.Location = New System.Drawing.Point(711, 146)
         Me.TrackBar3.Maximum = 100
         Me.TrackBar3.Minimum = 1
         Me.TrackBar3.Name = "TrackBar3"
@@ -132,15 +134,15 @@ Partial Class Form1
         '
         Me.PictureBox1.Location = New System.Drawing.Point(12, 249)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(323, 424)
+        Me.PictureBox1.Size = New System.Drawing.Size(431, 424)
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
         '
         'PictureBox2
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(341, 249)
+        Me.PictureBox2.Location = New System.Drawing.Point(449, 249)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(322, 424)
+        Me.PictureBox2.Size = New System.Drawing.Size(402, 424)
         Me.PictureBox2.TabIndex = 10
         Me.PictureBox2.TabStop = False
         '
@@ -148,7 +150,7 @@ Partial Class Form1
         '
         Me.TextBox4.BackColor = System.Drawing.SystemColors.Control
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.TextBox4.Location = New System.Drawing.Point(901, 220)
+        Me.TextBox4.Location = New System.Drawing.Point(901, 191)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(100, 16)
         Me.TextBox4.TabIndex = 13
@@ -156,7 +158,7 @@ Partial Class Form1
         '
         'TrackBar4
         '
-        Me.TrackBar4.Location = New System.Drawing.Point(897, 175)
+        Me.TrackBar4.Location = New System.Drawing.Point(897, 146)
         Me.TrackBar4.Minimum = 1
         Me.TrackBar4.Name = "TrackBar4"
         Me.TrackBar4.Size = New System.Drawing.Size(104, 45)
@@ -167,7 +169,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1178, 685)
+        Me.ClientSize = New System.Drawing.Size(1069, 685)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TrackBar4)
         Me.Controls.Add(Me.PictureBox2)
@@ -182,7 +184,7 @@ Partial Class Form1
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Alberto Spinella - 2076802 - VB"
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar3, System.ComponentModel.ISupportInitialize).EndInit()
