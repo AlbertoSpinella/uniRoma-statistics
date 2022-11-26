@@ -65,7 +65,7 @@ Partial Class Form1
         'TrackBar1
         '
         Me.TrackBar1.Location = New System.Drawing.Point(571, 190)
-        Me.TrackBar1.Maximum = 200
+        Me.TrackBar1.Maximum = 1000
         Me.TrackBar1.Minimum = 10
         Me.TrackBar1.Name = "TrackBar1"
         Me.TrackBar1.Size = New System.Drawing.Size(104, 45)
@@ -89,7 +89,7 @@ Partial Class Form1
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBox1.Location = New System.Drawing.Point(575, 231)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 16)
+        Me.TextBox1.Size = New System.Drawing.Size(113, 16)
         Me.TextBox1.TabIndex = 7
         Me.TextBox1.Text = "TrialsCount: 100"
         '

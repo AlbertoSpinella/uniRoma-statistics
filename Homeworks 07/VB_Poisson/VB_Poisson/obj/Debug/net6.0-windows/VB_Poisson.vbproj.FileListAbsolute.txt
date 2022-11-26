@@ -1,0 +1,17 @@
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\bin\Debug\net6.0-windows\VB_Poisson.exe
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\bin\Debug\net6.0-windows\VB_Poisson.deps.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\bin\Debug\net6.0-windows\VB_Poisson.runtimeconfig.json
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\bin\Debug\net6.0-windows\VB_Poisson.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\bin\Debug\net6.0-windows\VB_Poisson.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\VB_Poisson.vbproj.AssemblyReference.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\VB_Poisson.Form1.resources
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\VB_Poisson.vbproj.GenerateResource.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\VB_Poisson.GeneratedMSBuildEditorConfig.editorconfig
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\VB_Poisson.AssemblyInfoInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\VB_Poisson.AssemblyInfo.vb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\VB_Poisson.vbproj.CoreCompileInputs.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\VB_Poisson.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\refint\VB_Poisson.dll
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\VB_Poisson.pdb
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\VB_Poisson.genruntimeconfig.cache
+C:\AlbertoDoc\dev\AlbertoSpinella\uniRoma-statistics\Homeworks 07\VB_Poisson\VB_Poisson\obj\Debug\net6.0-windows\ref\VB_Poisson.dll
