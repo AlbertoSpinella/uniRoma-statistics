@@ -67,7 +67,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(154, 78)
         Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Run"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TrackBar1
